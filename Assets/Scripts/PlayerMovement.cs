@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveDirection;
 
-    public Animator anim;
+    public Animator animator;
     public float hf = 0.0f;
     public float vf = 0.0f;
 
@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,10 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        anim.SetFloat("Horizontal", hf);
-        //anim.SetFloat("Vertical", moveDirection.z);
-        anim.SetFloat("Vertical", moveDirection.y);
-        anim.SetFloat("Speed", vf);        
+        animator.SetFloat("Horizontal", moveDirection.x);
+        animator.SetFloat("Vertical", moveDirection.y);
+        animator.SetFloat("Speed", moveDirection.sqrMagnitude);        
     }
 
     void FixedUpdate()
