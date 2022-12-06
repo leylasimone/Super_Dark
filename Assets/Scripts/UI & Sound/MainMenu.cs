@@ -8,15 +8,15 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         //Sound
-        FindObjectOfType<AudioManager>().Play("MenuMusic");
+        //FindObjectOfType<AudioManager>().Play("MenuMusic");
         //Sound
     }
     public void PlayGame()
     {
         //Sound
-        FindObjectOfType<AudioManager>().StopPlaying("MenuMusic");
-        FindObjectOfType<AudioManager>().Play("Button");
-        FindObjectOfType<AudioManager>().Play("GameMusic");
+        //FindObjectOfType<AudioManager>().StopPlaying("MenuMusic");
+        //FindObjectOfType<AudioManager>().Play("Button");
+        //FindObjectOfType<AudioManager>().Play("GameMusic");
         //Sound
         SceneManager.LoadScene("MainGame");
     }
@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     public void MainMenuFunc()
     {
         //Sound
-        FindObjectOfType<AudioManager>().Play("MenuMusic");
+        //FindObjectOfType<AudioManager>().Play("MenuMusic");
         //Sound
         SceneManager.LoadScene("StartMenu");
     }
@@ -37,6 +37,6 @@ public class MainMenu : MonoBehaviour
 
     public void Next()
     {
-        FindObjectOfType<AudioManager>().Play("MenuButton");
+        //FindObjectOfType<AudioManager>().Play("MenuButton");
     }
 }
