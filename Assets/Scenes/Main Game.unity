@@ -1424,7 +1424,7 @@ GameObject:
   - component: {fileID: 1265683959}
   - component: {fileID: 1265683958}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: Canvas 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1659,6 +1659,7 @@ GameObject:
   - component: {fileID: 1425287249}
   - component: {fileID: 1425287248}
   - component: {fileID: 1425287247}
+  - component: {fileID: 1425287250}
   m_Layer: 0
   m_Name: Racoon
   m_TagString: Untagged
@@ -1753,6 +1754,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1425287250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425287246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14097a299c5ec2d48b9db8e49171dbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCTree: {fileID: 11400000, guid: 92046b0d060b84e45a4e82bc70963a4f, type: 2}
+  logicList: []
 --- !u!1 &1527617186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1885,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 1862591651}
+--- !u!1001 &1598220523
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 1646110029}
+    m_Modifications:
+    - target: {fileID: 1575095798826948, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_Name
+      value: EZPZ_InfoHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 298.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 168
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+--- !u!4 &1598220524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4885003995368666, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
+  m_PrefabInstance: {fileID: 1598220523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1646110027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,7 +1982,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinText: {fileID: 0}
   coinTextBackground: {fileID: 0}
-  npcList: []
+  npcList:
+  - {fileID: 0}
   DialogueCanvas: {fileID: 1265683956}
   dialogueText: {fileID: 762568202}
   dialogueBackgroundText: {fileID: 0}
@@ -1911,17 +1991,19 @@ MonoBehaviour:
   speakerNameBackgroundText: {fileID: 0}
   backgroundImage: {fileID: 0}
   speakerTextImage: {fileID: 0}
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 817899056}
   BackgroundImages: []
-  SpeakerTextImages: []
-  choice1Text: {fileID: 0}
+  SpeakerTextImages:
+  - {fileID: 21300000, guid: 1f87188030cad47beb04d0e06578109a, type: 3}
+  - {fileID: -641530832, guid: d532ab99a2ad5472c865cacdcd79ea95, type: 3}
+  choice1Text: {fileID: 762568202}
   choice1BackgroundText: {fileID: 0}
   choice2Text: {fileID: 0}
   choice2BackgroundText: {fileID: 0}
   choice1ImageObj: {fileID: 0}
   choice2ImageObj: {fileID: 0}
   EZPZ_reader: {fileID: 1646110030}
-  EZPZ_infoHolder: {fileID: 0}
+  EZPZ_infoHolder: {fileID: 114836293315598394, guid: 72a20a3a234901648b5496097b1531ac, type: 3}
 --- !u!4 &1646110029
 Transform:
   m_ObjectHideFlags: 0
@@ -1935,6 +2017,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1265683957}
+  - {fileID: 1598220524}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
